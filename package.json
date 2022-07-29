@@ -1,15 +1,16 @@
 {
-  "name": "postcss-px-to-viewport",
+  "name": "postcss-px-to-viewport-next",
   "description": "A CSS post-processor that converts px to viewport units (vw, vh, vmin, vmax).",
-  "version": "1.1.1",
+  "version": "2.0.0",
+  "packageManager": "pnpm@7.6.0",
   "author": "Dmitry Karpunin <koderfunk@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:evrone/postcss-px-to-viewport.git"
+    "url": "git@github.com:reed-soul/postcss-px-to-viewport.git"
   },
-  "bugs": "https://github.com/evrone/postcss-px-to-viewport/issues",
-  "homepage": "https://github.com/evrone/postcss-px-to-viewport",
+  "bugs": "https://github.com/reed-soul/postcss-px-to-viewport/issues",
+  "homepage": "https://github.com/reed-soul/postcss-px-to-viewport",
   "main": "index.js",
   "keywords": [
     "css",
@@ -22,19 +23,21 @@
     "vmin",
     "vmax",
     "postcss",
+    "postcss8",
     "postcss-plugin"
   ],
   "scripts": {
-    "test": "jest spec/*.spec.js"
+    "test": "jest spec/index.spec.js"
   },
   "dependencies": {
     "object-assign": ">=4.0.1"
   },
   "devDependencies": {
+    "clean-publish": "^4.0.0",
     "jest": "^25.4.0",
-    "postcss": ">=5.0.2"
+    "postcss": "^8.4.12"
   },
   "peerDependencies": {
-    "postcss": ">=5.0.2"
+    "postcss": "^8.4.12"
   }
 }
